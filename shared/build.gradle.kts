@@ -47,6 +47,9 @@ kotlin {
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             
+            implementation(libs.lifecycle.viewmodel)
+            implementation(libs.navigation.compose)
+            
             // Compose dependencies
             implementation (libs.androidx.lifecycle.viewmodel.compose)
             implementation(libs.navigation.compose)
@@ -86,8 +89,6 @@ kotlin {
             implementation(libs.koin.compose.navigation)
             implementation(libs.koin.annotations)
             implementation(libs.koin.compose)
-            implementation(libs.lifecycle.viewmodel)
-            implementation(libs.navigation.compose)
         }
         androidMain.dependencies {
             implementation(libs.ktor.android)
