@@ -34,8 +34,6 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
-            implementation(libs.koin.android)
-            implementation(libs.koin.androidx.compose)
             implementation(libs.compose.ui)
             implementation(libs.compose.material3)
         }
@@ -46,13 +44,9 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            
             implementation(libs.lifecycle.viewmodel)
             implementation(libs.navigation.compose)
-            
-            // Compose dependencies
-            implementation (libs.androidx.lifecycle.viewmodel.compose)
-            implementation(libs.navigation.compose)
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
             
             // Coroutines
             implementation (libs.kotlinx.coroutines.core)
@@ -83,12 +77,13 @@ kotlin {
             implementation(libs.ktor.client.logging)
             
             ///// KOIN /////
-            implementation(project.dependencies.platform(libs.koin.bom))
+            //implementation(project.dependencies.platform(libs.koin.bom))
             api(libs.koin.core)
             implementation(libs.koin.compose.viewmodel)
             implementation(libs.koin.compose.navigation)
             implementation(libs.koin.annotations)
             implementation(libs.koin.compose)
+            implementation(libs.koin.android)
         }
         androidMain.dependencies {
             implementation(libs.ktor.android)

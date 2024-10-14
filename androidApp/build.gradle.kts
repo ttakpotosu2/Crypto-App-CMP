@@ -47,7 +47,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     debugImplementation(libs.compose.ui.tooling)
     
-    implementation(libs.koin.bom)
+    //implementation(libs.koin.bom)
     implementation(libs.koin.core)
     implementation(libs.koin.compose)
     implementation(libs.koin.compose.viewmodel)
@@ -55,4 +55,21 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.annotations)
     ksp(libs.koin.ksp.compiler)
+    // Compose dependencies
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.navigation.compose)
+    // Coroutines
+    implementation (libs.kotlinx.coroutines.core)
+    implementation (libs.kotlinx.coroutines.android)
+    // Coroutine Lifecycle Scopes
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.lifecycle.runtime.ktx)
+    //Coil
+    implementation(libs.coil.compose)
+    //Y Charts
+    implementation(libs.ycharts)
+    // Shimmer
+    implementation(libs.compose.shimmer)
+    //Splashscreen
+    implementation(libs.androidx.core.splashscreen)
 }
