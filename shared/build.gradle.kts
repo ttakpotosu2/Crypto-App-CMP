@@ -36,6 +36,9 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation(libs.compose.ui)
             implementation(libs.compose.material3)
+
+            implementation(libs.koin.android)
+            implementation(libs.koin.androidx.compose)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -46,27 +49,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.lifecycle.viewmodel)
             implementation(libs.navigation.compose)
-            implementation(libs.androidx.lifecycle.viewmodel.compose)
-            
-            // Coroutines
-            implementation (libs.kotlinx.coroutines.core)
-            implementation (libs.kotlinx.coroutines.android)
-            
-            // Coroutine Lifecycle Scopes
-            implementation (libs.androidx.lifecycle.viewmodel.ktx)
-            implementation (libs.androidx.lifecycle.runtime.ktx)
-            
-            //Coil
-            implementation(libs.coil.compose)
-            
-            //Y Charts
-            implementation(libs.ycharts)
-            
-            // Shimmer
-            implementation(libs.compose.shimmer)
-            
-            //Splashscreen
-            implementation(libs.androidx.core.splashscreen)
+//            implementation(libs.androidx.lifecycle.viewmodel.compose)
             
             //Ktor
             api(libs.ktor.core)
@@ -83,7 +66,7 @@ kotlin {
             implementation(libs.koin.compose.navigation)
             implementation(libs.koin.annotations)
             implementation(libs.koin.compose)
-            implementation(libs.koin.android)
+//
         }
         androidMain.dependencies {
             implementation(libs.ktor.android)
